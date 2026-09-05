@@ -80,3 +80,9 @@ pnpm dev
 Use the buttons in `examples/vite` to try logging, exceptions, and unhandled promise rejections. Tests cover serialization, the capture lifecycle, real Vite HMR WebSocket reception, base URLs, and runtime exclusion from production builds.
 
 Vite transport API: [Client-server Communication](https://vite.dev/guide/api-plugin.html#client-server-communication)
+
+## Publishing
+
+The `Publish packages` GitHub Actions workflow publishes all three packages when a GitHub Release is published. All package versions must match, and the release tag must be `v<version>` (for example, `v0.1.0`). Stable releases use the npm `latest` tag; GitHub prereleases use `next`.
+
+Publishing uses npm Trusted Publishing with GitHub Actions OIDC. Configure `publish.yml` as a trusted publisher for each package on npm, with `mika-f` as the owner and `resona` as the repository, and allow `npm publish`. No npm access token is required after that setup.

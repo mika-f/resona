@@ -2,8 +2,18 @@
   "name": "@natsuneko-laboratory/resona-vite",
   "version": "0.1.0",
   "description": "Forward browser logs to the Vite development server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mika-f/resona.git",
+    "directory": "packages/vite"
+  },
+  "homepage": "https://github.com/mika-f/resona#readme",
+  "bugs": "https://github.com/mika-f/resona/issues",
   "type": "module",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
