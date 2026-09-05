@@ -1,0 +1,13 @@
+{
+  "name": "@natsuneko-laboratory/resona-playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@natsuneko-laboratory/resona-vite": "workspace:*",
+    "vite": "^7.0.0"
+  }
+}
